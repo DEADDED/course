@@ -1,0 +1,22 @@
+<div class="container pad-top">
+  <a ui-sref="newMaschine" class="btn-primary btn-lg nodecoration">Добавить машину</a>
+  <div class="page-header">
+    <h1>Каталог стиральных машин<small> с вертикальной загрузкой</small></h1>
+  </div>
+  <div class="row">
+  <div ng-repeat="maschine in maschines">
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail border border-success" >
+        <img class="preview" ng-src = '{{maschine.src}}' alt="washing maschine photo">
+        <div class="caption">
+          <h3>{{maschine.name}}</h3>
+          <p>{{maschine.type}}, максимальная загрузка {{maschine.maxkg}} кг, {{maschine.maxturns}} оборотов / мин</p>
+          <p class="bg-info price">{{maschine.price}} рублей</p>
+          <p><a class="btn btn-primary" ui-sref="viewMaschine({id:maschine.id})">Подробнее</a> <a href="#" class="btn btn-danger" ng-click="deleteMaschine(maschine)">Удалить</a></p>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
+

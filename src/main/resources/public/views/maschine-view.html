@@ -1,0 +1,45 @@
+<div class="container pad-top"> 
+  <h3>Стиральная машина {{maschine.name}}</h3>
+  <div class="row">
+    <div class="col-sm-6 col-md-6 col-lg-6">
+      <img class="img-responsive preview" ng-src="{{maschine.src}}" />
+    </div>
+	<div class="col-sm-6 col-md-6 col-lg-6">
+	    <table class="table table-striped">
+	     <tr>
+	        <td >Цена</td>
+	        <td class="bg-info">{{maschine.price}} рублей</td>
+	      </tr>
+	      <tr>
+	        <td>Максимальная загрузка</td>
+	        <td>{{maschine.maxkg}} кг</td>
+	      </tr>
+	      <tr>
+	        <td >Тип</td>
+	        <td>{{maschine.type}}</td>
+	      </tr>
+	      <tr>
+	        <td>Максимальные обороты отжима</td>
+	        <td>{{maschine.maxturns}} оборотов / мин</td>
+	      </tr>
+	      <tr>
+	        <td>Вес</td>
+	        <td>{{maschine.weight}}</td>
+	      </tr>
+	      <tr>
+	        <td>Глубина</td>
+	        <td>{{maschine.depth}} см</td>
+	      </tr>
+	      <tr>
+	        <td>Ширина</td>
+	        <td>{{maschine.width}} см</td>
+	      </tr>
+	      <tr>
+	        <td>Высота</td>
+	        <td>{{maschine.height}} см</td>
+	      </tr>
+	    </table>
+	  </div>
+    </div>
+    <a id="edit" class="btn btn-primary" ui-sref="editMaschine({id:maschine.id})">Редактировать</a>
+</div>
