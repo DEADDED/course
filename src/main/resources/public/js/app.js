@@ -63,7 +63,7 @@
 	        controller:'MaschineEditController'
 	    })
 	})
-	.directive('updateTitle', ['$rootScope', '$timeout',
+	/*.directive('updateTitle', ['$rootScope', '$timeout',
 		function($rootScope, $timeout) {
 			return {
 				link: function(scope, element) {
@@ -79,5 +79,5 @@
 				}
 			};
 		}
-	]);
+	]);*/
 }());
